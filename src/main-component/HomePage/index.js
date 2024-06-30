@@ -12,14 +12,16 @@ import WorldSection from '../../components/world'
 import BlogSection from '../../components/BlogSection'
 import Footer from '../../components/footer'
 import Scrollbar from '../../components/scrollbar'
+import Dashobard from './Dashobard';
 
 
 const HomePage =() => {
     return(
         <Fragment>
             <Header/>
-            <Hero/>
-            <Mission/>
+            <Dashobard/>
+            {/* <Hero/> */}
+            {/* <Mission/>
             <About/>
             <CaseSlide/>
             <CounterSection/>
@@ -27,7 +29,7 @@ const HomePage =() => {
             <WorldSection/>
             <EventSection/>
             <CtaSection/>
-            <BlogSection/>
+            <BlogSection/> */}
             <Footer/>
             <Scrollbar/>
         </Fragment>

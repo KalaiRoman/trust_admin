@@ -9,19 +9,21 @@ import CounterSection from '../../components/counter'
 import TeamSection from '../../components/team'
 import Footer from '../../components/footer'
 import Scrollbar from '../../components/scrollbar'
+import Allusers from './Allusers';
 
 
 const CasePage =() => {
     return(
         <Fragment>
             <Header/>
-            <PageTitle pageTitle={'About Us'} pagesub={'About'}/> 
-            <VedioCta/>
+            <Allusers/>
+            {/* <PageTitle pageTitle={'About Us'} pagesub={'About'}/>  */}
+            {/* <VedioCta/>
             <Mission subclass={'section-padding'}/>
             <About/>
             <CaseSlide/>
             <CounterSection/>
-            <TeamSection/>
+            <TeamSection/> */}
             <Footer/>
             <Scrollbar/>
         </Fragment>

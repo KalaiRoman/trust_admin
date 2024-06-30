@@ -14,3 +14,22 @@ export async function SubscribeUser(datas){
         
     }
 }
+
+
+export async function getAllSubscribe(){
+
+    try {
+        const response=await instanceBaseurl.get(`${AllApis?.subscribe_get_all}`);
+       if(response)
+        {
+            return{
+                status:response?.data?.status,
+                data:response?.data?.data,
+                message:response?.data?.message
+            }
+        }
+    } catch (error) {
+            return {message:error?.response?.data?.message,status:error?.status};
+        
+    }
+}

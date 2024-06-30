@@ -14,4 +14,12 @@ export const AllApis={
     address_update:"address/update",
     profile_update:"auth/update",
     allpayments_api:"payment/get",
+    admin_all_users:"auth/admin/all",
+    admin_all_payment:"payment/get/allpayment",
+contact_get_all:"contact/get/alladmin",
+subscribe_get_all:"subscribe/get/all",
+overAll_counts:'admin/overall'
+
+
+
 }

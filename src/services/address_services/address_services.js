@@ -63,3 +63,21 @@ export async function updateAddress(id,datas){
         
     }
 }
+
+// over all
+
+
+export async function overAllDataCounts(){
+
+    try {
+        const response=await instanceBaseurl.get(`${AllApis?.overAll_counts}`);
+        const {status,message,data}=response?.data;
+        if(status)
+            {
+                return {message:message,status:status,data:data};
+            }
+    } catch (error) {
+            return {message:error?.response?.data?.message,status:error?.status};
+        
+    }
+}

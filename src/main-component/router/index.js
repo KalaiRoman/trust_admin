@@ -34,13 +34,13 @@ const AllRoute = () => {
       <BrowserRouter>
         <Routes>
           <Route exact path='/' element={<LoginPage />} />
-          <Route path='home' element={<Homepage />} />
+          <Route path='dashboard' element={<Homepage />} />
           <Route path='home2' element={<Homepage2 />} />
-          <Route path='home3' element={<Homepage3 />} />
+          <Route path='subscribers' element={<Homepage3 />} />
           <Route path='about' element={<AboutPage />} />
-          <Route path='case' element={<CasePage />} />
+          <Route path='payments' element={<CasePage />} />
           <Route path='case-single' element={<CaseSinglePage />} />
-          <Route path='event' element={<EventPage />} />
+          <Route path='contact' element={<EventPage />} />
           <Route path='event-details' element={<EventPageSingle />} />
           <Route path='donate' element={<DonatePage />} />
           <Route path='volunteer' element={<VolunteerPage />} />

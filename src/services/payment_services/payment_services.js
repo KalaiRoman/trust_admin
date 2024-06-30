@@ -32,3 +32,21 @@ export async function GetPayment(){
         
     }
 }
+
+export async function AllPayment(){
+
+    try {
+        const response=await instanceBaseurl.get(`${AllApis?.admin_all_payment}`);
+       if(response)
+        {
+            return{
+                status:response?.data?.status,
+                data:response?.data?.data,
+                message:response?.data?.message
+            }
+        }
+    } catch (error) {
+            return {message:error?.response?.data?.message,status:error?.status};
+        
+    }
+}

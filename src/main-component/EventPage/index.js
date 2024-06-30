@@ -4,14 +4,18 @@ import PageTitle from '../../components/pagetitle'
 import EventSection2 from '../../components/event2'
 import Footer from '../../components/footer'
 import Scrollbar from '../../components/scrollbar'
+import ContactDetails from './ContactDetails';
 
 
 const EventPage =() => {
     return(
         <Fragment>
             <Header/>
-            <PageTitle pageTitle={'Our Event'} pagesub={'Event'}/> 
-            <EventSection2/>
+            <section>
+                <ContactDetails/>
+            </section>
+            {/* <PageTitle pageTitle={'Our Event'} pagesub={'Event'}/>  */}
+            {/* <EventSection2/> */}
             <Footer/>
             <Scrollbar/>
         </Fragment>

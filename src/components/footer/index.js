@@ -14,8 +14,8 @@ const Footer = (props) =>{
 
   return(
     <footer className="wpo-site-footer">
-        <Newsletter/>
-        <div className="wpo-upper-footer">
+        {/* <Newsletter/> */}
+        <div className="wpo-upper-footer mt-5">
             <div className="container">
                 <div className="row">
                     <div className="col col-lg-3 col-md-6 col-sm-12 col-12">

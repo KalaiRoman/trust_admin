@@ -26,7 +26,7 @@ const Newsletter = (props) => {
             <div className="container">
                 <div className="row">
                     <div className="col col-md-6 offset-lg-3 col-sm-8 offset-md-2">
-                        <div className="wpo-newsletter">
+                        {/* <div className="wpo-newsletter">
                             <h3>Follow us For ferther information</h3>
                             <div className="wpo-newsletter-form">
                                 <form onSubmit={SubmitHandler}>
@@ -38,7 +38,7 @@ const Newsletter = (props) => {
                                     </div>
                                 </form>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

@@ -12,22 +12,24 @@ import WorldSection from '../../components/world'
 import BlogSection from '../../components/BlogSection'
 import Footer from '../../components/footer'
 import Scrollbar from '../../components/scrollbar'
+import AllSubscriers from './AllSubscriers';
 
 
 const HomePage3 =() => {
     return(
         <Fragment>
             <Header/>
-            <Hero3/>
-            <Mission subclass={'section-padding'}/>
-            <About/>
-            <CaseSlide/>
-            <CounterSection countclass={'wpo-counter-style-2'}/>
-            <TeamSection/>
-            <WorldSection worldclass={'wpo-world-area-2'}/>
-            <EventSection/>
-            <CtaSection ctaclass={'wpo-cta-area-2'}/>
-            <BlogSection/>
+            <AllSubscriers/>
+            {/* <Hero3/> */}
+            {/* <Mission subclass={'section-padding'}/> */}
+            {/* <About/> */}
+            {/* <CaseSlide/> */}
+            {/* <CounterSection countclass={'wpo-counter-style-2'}/> */}
+            {/* <TeamSection/> */}
+            {/* <WorldSection worldclass={'wpo-world-area-2'}/> */}
+            {/* <EventSection/> */}
+            {/* <CtaSection ctaclass={'wpo-cta-area-2'}/> */}
+            {/* <BlogSection/> */}
             <Footer/>
             <Scrollbar/>
         </Fragment>

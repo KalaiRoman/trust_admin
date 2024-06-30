@@ -12,6 +12,8 @@ const Header = () => {
         e.preventDefault()
      }
 
+
+     const path=window.location.pathname;
     return(	
 	<div className="middle-header header-style-3">
         <HeaderTopbar/>
@@ -26,22 +28,17 @@ const Header = () => {
                 <div className="col-lg-8 d-lg-block d-none">
                     <nav>
                         <ul>
-                            <li><Link className="active" to="/home" title="">Dashboard</Link>
-                                <ul>
-                                    <li><Link className="active" to="/home">Home style 1</Link></li>
-                                    <li><Link to="/home2">Home style 2</Link></li>
-                                    <li><Link to="/home3">Home style 3</Link></li>
-                                </ul>
-                            </li>
-                            <li><Link to="/about" title="">All Users</Link></li>
-                            <li><Link to="/case" title="">Payments</Link>
+                            <li><Link className={path==="/dashboard"?"active":""} to="/dashboard" title="">Dashboard</Link>
                                
                             </li>
-                            <li><Link to="/event" title="">Contact</Link>
+                            <li><Link className={path==="/about"?"active":""} to="/about" title="">All Users</Link></li>
+                            <li><Link to="/payments" title="" className={path==="/payments"?"active":""}>Payments</Link>
                                
                             </li>
-                            <li><Link to="/home" title="">Subscribers</Link>
+                            <li><Link to="/contact" title="" className={path==="/contact"?"active":""}>Contact</Link>
                                
+                            </li>
+                            <li><Link to="/subscribers" title="" className={path==="/subscribers"?"active":""}>Subscribers</Link>
                             </li>
                            
                         </ul>

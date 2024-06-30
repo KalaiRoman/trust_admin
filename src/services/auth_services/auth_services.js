@@ -124,3 +124,22 @@ export async function updateProfileservice(datas){
         
     }
 }
+
+// all users
+
+export async function getAllusers(){
+
+    try {
+        const response=await instanceBaseurl.get(`${AllApis?.admin_all_users}`);
+        const {status,message,data}=response?.data;
+        if(status)
+            {
+                return {message:message,status:status,data:data};
+            }
+    } catch (error) {
+
+        console.log(error?.response?.data?.message,"kalai")
+            return {message:error?.response?.data?.message,status:error?.status};
+        
+    }
+}
