@@ -21,38 +21,37 @@ const getData=async()=>{
     getData();
   },[])
 
-  console.log(allusers,'allusers')
   return (
     <div className='container mt-5 mb-5 p-2 row w-100 mx-auto gap-2'>
-      <div className='card p-4 col-lg-2'>
+      <div className='card p-4 col-lg-2 text-center'>
         <div>
-All Users : 
+All Users  
         </div>
-        <div className='mt-3 fw-bold fs-3'>
+        <div className='mt-3 fw-bold fs-1'>
           {allusers?.userCount}
         </div>
       </div>
-      <div className='card p-4 col-lg-2'>
+      <div className='card p-4 col-lg-2 text-center'>
         <div>
-All payments : 
+All payments  
         </div>
-        <div className='mt-3 fw-bold fs-3'>
+        <div className='mt-3 fw-bold fs-1'>
           {allusers?.paymentCounts}
         </div>
       </div>
-      <div className='card p-4 col-lg-2'>
+      <div className='card p-4 col-lg-2 text-center'>
         <div>
-All Contacts : 
+All Contacts  
         </div>
-        <div className='mt-3 fw-bold fs-3'>
+        <div className='mt-3 fw-bold fs-1'>
           {allusers?.contactCount}
         </div>
       </div>
-      <div className='card p-4 col-lg-2'>
+      <div className='card p-4 col-lg-2 text-center'>
         <div>
-All Subscribers : 
+All Subscribers 
         </div>
-        <div className='mt-3 fw-bold fs-3'>
+        <div className='mt-3 fw-bold fs-1'>
           {allusers?.subscriberCount}
         </div>
       </div>

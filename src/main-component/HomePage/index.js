@@ -30,7 +30,7 @@ const HomePage =() => {
             <EventSection/>
             <CtaSection/>
             <BlogSection/> */}
-            <Footer/>
+            {/* <Footer/> */}
             <Scrollbar/>
         </Fragment>
     )

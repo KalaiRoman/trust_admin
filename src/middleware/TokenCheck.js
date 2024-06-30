@@ -36,6 +36,7 @@ function TokenCheck() {
 
     const removeToken=async()=>{
         localStorage.removeItem("tr_token");
+        window.location.reload();
     }
 
     useEffect(()=>{

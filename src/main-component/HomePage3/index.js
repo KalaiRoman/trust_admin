@@ -30,7 +30,7 @@ const HomePage3 =() => {
             {/* <EventSection/> */}
             {/* <CtaSection ctaclass={'wpo-cta-area-2'}/> */}
             {/* <BlogSection/> */}
-            <Footer/>
+            {/* <Footer/> */}
             <Scrollbar/>
         </Fragment>
     )

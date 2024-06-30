@@ -26,7 +26,7 @@ if(status)
     },[])
 
   return (
-    <div className='container p-2'>
+    <div className='container p-2 mt-5 mb-4'>
       
 
 <table class="table table-striped table-hover">

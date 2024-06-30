@@ -27,7 +27,7 @@ if(status)
     console.log(contacts,'contacts')
   return (
     <div>
-        <div className='container p-2'>
+        <div className='container p-2 mt-5 mb-5'>
       
 
       <table class="table table-striped table-hover">

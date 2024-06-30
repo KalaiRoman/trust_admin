@@ -12,7 +12,6 @@ function Profile() {
   const {token,userdata,removeToken,userdataPayment}=TokenCheck();
 
   const history=useNavigate();
-  console.log(userdataPayment,'userdataPayment')
   const [activetab,setActiveTab]=useState("profile");
   const [user,setUser]=useState({
     userName:"",
@@ -72,16 +71,14 @@ handleClose3();
       <div className='container'>
         
         <div className='mt-5 d-flex gap-5 buttons'>
-          <div>
+          {/* <div>
             <buttton className={activetab=="profile"?"theme-btn":"theme-btn-inactive"} onClick={()=>setActiveTab("profile")}>Profile</buttton>
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             <buttton className={activetab=="payment"?"theme-btn":"theme-btn-inactive"} onClick={()=>setActiveTab("payment")}>Payment You</buttton>
-          </div>
+          </div> */}
         </div>
-        <div>
-          <hr/>
-        </div>
+        
 
       {activetab==="profile" && <>
       
@@ -134,7 +131,7 @@ handleClose3();
         </div>
       </>}
 
-      {activetab==="payment" && <>
+      {/* {activetab==="payment" && <>
       
       {userdataPayment?.map((item,index)=>{
         return(
@@ -159,7 +156,7 @@ handleClose3();
           </div>
         )
       })}
-      </>}
+      </>} */}
       </div>
 
       <Modal show={show3} onHide={handleClose3} backdrop="static" keyboard={false} centered size='lg'>

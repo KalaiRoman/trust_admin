@@ -24,7 +24,7 @@ const CasePage =() => {
             <CaseSlide/>
             <CounterSection/>
             <TeamSection/> */}
-            <Footer/>
+            {/* <Footer/> */}
             <Scrollbar/>
         </Fragment>
     )

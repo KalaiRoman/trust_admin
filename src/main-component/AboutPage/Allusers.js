@@ -25,7 +25,7 @@ if(status)
 
     },[])
   return (
-    <div className='container'>
+    <div className='container mt-5 mb-5'>
         {users?.map((item,index)=>{
             return(
                 <div className='card p-3' key={index}>

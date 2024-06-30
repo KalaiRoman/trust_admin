@@ -16,7 +16,7 @@ const AboutPage =() => {
             {/* <PageTitle pageTitle={'Our Causes'} pagesub={'Causes'}/>  */}
             {/* <Mission subclass={'section-padding'}/> */}
             {/* <Casesection/> */}
-            <Footer/>
+            {/* <Footer/> */}
             <Scrollbar/>
         </Fragment>
     )

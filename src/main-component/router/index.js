@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import Homepage from '../HomePage'
 import Homepage2 from '../HomePage2'
 import Homepage3 from '../HomePage3'
@@ -19,21 +19,24 @@ import BlogDetailsFull from '../BlogDetailsFull'
 import ErrorPage from '../ErrorPage'
 import ContactPage from '../ContactPage'
 import LoginPage from '../LoginPage'
-import SignUpPage from '../SignUpPage'
 import ForgotPassword from '../ForgotPassword'
-import Otp from '../otp/Otp';
 import Changepassword from '../changepassword/Changepassword';
 import Profile from '../../components/profile/Profile';
 import Invoice from '../../components/profile/compoents/invoice/Invoice';
+import ProtectedRouter from './ProtectedRouter';
 
 
 const AllRoute = () => {
 
+
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route exact path='/' element={<LoginPage />} />
+        <Routes >
+        <Route exact path='/' element={<LoginPage />} />
+        <Route path='forgot-password' element={<ForgotPassword />} />
+        <Route path='change-password' element={<Changepassword />} />
+          <Route element={<ProtectedRouter/>}>
           <Route path='dashboard' element={<Homepage />} />
           <Route path='home2' element={<Homepage2 />} />
           <Route path='subscribers' element={<Homepage3 />} />
@@ -53,18 +56,10 @@ const AllRoute = () => {
           <Route path='404' element={<ErrorPage />} />
           <Route path='contact' element={<ContactPage />} />
           {/* <Route path='login' element={<LoginPage />} /> */}
-          <Route path='signup' element={<SignUpPage />} />
-          <Route path='forgot-password' element={<ForgotPassword />} />
-          <Route path='otp' element={<Otp />} />
-          <Route path='change-password' element={<Changepassword />} />
           <Route path='profile' element={<Profile />} />
           <Route path='invoice/:id' element={< Invoice/>} />
-
-
-
-
           <Route path='*' element={<ErrorPage />} />
-
+          </Route>
         </Routes>
       </BrowserRouter>
     </div >

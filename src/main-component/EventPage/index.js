@@ -16,7 +16,7 @@ const EventPage =() => {
             </section>
             {/* <PageTitle pageTitle={'Our Event'} pagesub={'Event'}/>  */}
             {/* <EventSection2/> */}
-            <Footer/>
+            {/* <Footer/> */}
             <Scrollbar/>
         </Fragment>
     )
