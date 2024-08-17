@@ -10,10 +10,10 @@ const CaseSinglePage =() => {
     return(
         <Fragment>
             <Header/>
-            <PageTitle pageTitle={'Single Causes'} pagesub={'Ensure Education for every poor children'}/> 
-            <CaseSingle/>
-            <Footer/>
-            <Scrollbar/>
+            
+          <div className='container mt-4'>
+welcome
+          </div>
         </Fragment>
     )
 };

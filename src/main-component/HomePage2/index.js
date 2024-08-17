@@ -19,7 +19,7 @@ const HomePage2 =() => {
         <Fragment>
             <Header/>
             <Hero2/>
-            <Mission subclass={'section-padding'}/>
+            {/* <Mission subclass={'section-padding'}/>
             <About/>
             <CaseSlide/>
             <CounterSection/>
@@ -29,7 +29,7 @@ const HomePage2 =() => {
             <CtaSection/>
             <BlogSection/>
             <Footer/>
-            <Scrollbar/>
+            <Scrollbar/> */}
         </Fragment>
     )
 };

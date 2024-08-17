@@ -6,13 +6,10 @@ import MobileMenu from '../../components/MobileMenu'
 import min1 from '../../images/shop/mini-cart/img-1.jpg'
 import min2 from '../../images/shop/mini-cart/img-2.jpg'
 import './style.css'
-
 const Header = () => {
     const SubmitHandler = (e) =>{
         e.preventDefault()
      }
-
-
      const path=window.location.pathname;
     return(	
 	<div className="middle-header header-style-3">
@@ -31,12 +28,15 @@ const Header = () => {
                             <li><Link className={path==="/dashboard"?"active":""} to="/dashboard" title="">Dashboard</Link>
                                
                             </li>
-                            <li><Link className={path==="/about"?"active":""} to="/about" title="">All Users</Link></li>
-                            <li><Link to="/payments" title="" className={path==="/payments"?"active":""}>Payments</Link>
+                            <li><Link className={path==="/usermanagement"?"active":""} to="/usermanagement" title="">User Management</Link>
                                
                             </li>
+                            <li><Link className={path==="/allusers"?"active":""} to="/allusers" title="">All Users</Link></li>
+                            <li><Link to="/payments" title="" className={path==="/payments"?"active":""}>Payments</Link>  
+                            </li>
                             <li><Link to="/contact" title="" className={path==="/contact"?"active":""}>Contact</Link>
-                               
+                            </li>
+                            <li><Link to="/reviewlist" title="" className={path==="/reviewlist"?"active":""}>ReviewList</Link>
                             </li>
                             <li><Link to="/subscribers" title="" className={path==="/subscribers"?"active":""}>Subscribers</Link>
                             </li>

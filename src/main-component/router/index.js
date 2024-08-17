@@ -38,26 +38,26 @@ const AllRoute = () => {
         <Route path='change-password' element={<Changepassword />} />
           <Route element={<ProtectedRouter/>}>
           <Route path='dashboard' element={<Homepage />} />
-          <Route path='home2' element={<Homepage2 />} />
+          <Route path='usermanagement' element={<Homepage2 />} />
           <Route path='subscribers' element={<Homepage3 />} />
-          <Route path='about' element={<AboutPage />} />
+          <Route path='allusers' element={<AboutPage />} />
           <Route path='payments' element={<CasePage />} />
-          <Route path='case-single' element={<CaseSinglePage />} />
+          <Route path='reviewlist' element={<CaseSinglePage />} />
           <Route path='contact' element={<EventPage />} />
-          <Route path='event-details' element={<EventPageSingle />} />
-          <Route path='donate' element={<DonatePage />} />
-          <Route path='volunteer' element={<VolunteerPage />} />
-          <Route path='blog' element={<BlogPage />} />
-          <Route path='blog-left' element={<BlogPageLeft />} />
-          <Route path='blog-fullwidth' element={<BlogPageFullwidth />} />
-          <Route path='blog-details' element={<BlogDetails />} />
-          <Route path='blog-details-left' element={<BlogDetailsLeftSiide />} />
-          <Route path='blog-details-fullwidth' element={<BlogDetailsFull />} />
-          <Route path='404' element={<ErrorPage />} />
+          {/* <Route path='event-details' element={<EventPageSingle />} /> */}
+          {/* <Route path='donate' element={<DonatePage />} /> */}
+          {/* <Route path='volunteer' element={<VolunteerPage />} /> */}
+          {/* <Route path='blog' element={<BlogPage />} /> */}
+          {/* <Route path='blog-left' element={<BlogPageLeft />} /> */}
+          {/* <Route path='blog-fullwidth' element={<BlogPageFullwidth />} /> */}
+          {/* <Route path='blog-details' element={<BlogDetails />} /> */}
+          {/* <Route path='blog-details-left' element={<BlogDetailsLeftSiide />} /> */}
+          {/* <Route path='blog-details-fullwidth' element={<BlogDetailsFull />} /> */}
+          {/* <Route path='404' element={<ErrorPage />} /> */}
           <Route path='contact' element={<ContactPage />} />
           {/* <Route path='login' element={<LoginPage />} /> */}
           <Route path='profile' element={<Profile />} />
-          <Route path='invoice/:id' element={< Invoice/>} />
+          {/* <Route path='invoice/:id' element={< Invoice/>} /> */}
           <Route path='*' element={<ErrorPage />} />
           </Route>
         </Routes>

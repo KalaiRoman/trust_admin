@@ -1,6 +1,6 @@
 export const AllApis={
     login_api:"auth/login",
-    register_api:"auth/register",
+    register_api:"auth/subadmin",
     otp_api:"auth/otp",
     address_create:"address/create",
     getall_address:"address/getall",
